@@ -3,124 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Web Development — Nyiko Mathebula</title>
-
 <link href="https://fonts.cdnfonts.com/css/rustic-roadway-personal-use" rel="stylesheet">
-
 <style>
-*{
-  box-sizing:border-box;
+* { box-sizing: border-box; }
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    background: linear-gradient(135deg,#e0f7e9 0%,#f4f4f4 50%,#e8f5e9 100%); 
+    margin:0; padding:20px; display:flex; justify-content:center; 
 }
-
-body{
-  font-family:'Segoe UI', Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg,#e0f7e9 0%,#f4f4f4 50%,#e8f5e9 100%);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
-  margin:0;
-  padding:20px;
+.card { 
+    background:white; 
+    padding:40px; 
+    border-radius:24px; 
+    width:100%; 
+    max-width:900px; 
+    display:flex; 
+    align-items:flex-start; 
+    gap:40px; 
+    box-shadow:0 12px 40px rgba(0,0,0,0.08); 
 }
-
-.card{
-  background:white;
-  padding:40px;
-  border-radius:24px;
-  width:100%;
-  max-width:1000px;
-  box-shadow:0 12px 40px rgba(0,0,0,0.08);
+.profile { flex:0 0 260px; margin-top:-40px; }
+.profile img { 
+    width:260px; 
+    height:260px; 
+    border-radius:50%; 
+    object-fit:cover; 
+    border:5px solid white; 
+    box-shadow:0 4px 20px rgba(0,0,0,0.15); 
 }
-
-h1,h2{
-  font-family:'Rustic Roadway', cursive;
-  color:#2d5e3f;
-  margin-top:0;
-  line-height:1.2;
+.content { flex:1; }
+h1,h2 { 
+    font-family:'Rustic Roadway - Personal use', cursive; 
+    color:#2d5e3f; 
+    margin-top:0; 
 }
-
-.container{
-  display:flex;
-  align-items:center;
-  gap:40px;
-  flex-wrap:wrap;
+p { color:#444; line-height:1.6; font-size:16px; }
+.btn { 
+    display:block; 
+    text-decoration:none; 
+    color:white; 
+    padding:14px 16px; 
+    margin:10px 0; 
+    border-radius:12px; 
+    font-weight:600; 
+    font-size:15px; 
+    text-align:center; 
+    transition: transform 0.15s ease, box-shadow 0.15s ease; 
 }
-
-.profile{
-  flex:0 0 260px;
-  text-align:center;
-}
-
-.profile img{
-  width:260px;
-  height:260px;
-  border-radius:50%;
-  object-fit:cover;
-  border:6px solid #2ecc71;
-  box-shadow:0 4px 20px rgba(0,0,0,0.15);
-}
-
-.content{
-  flex:1;
-}
-
-.content p{
-  font-size:1.1em;
-  line-height:1.6;
-  margin-bottom:20px;
-}
-
-.features{
-  list-style:none;
-  padding:0;
-}
-
-.features li{
-  background:#e0f2fe;
-  margin-bottom:10px;
-  padding:12px 16px;
-  border-radius:12px;
-  font-weight:600;
-}
-
-.back{
-  display:inline-block;
-  margin-top:20px;
-  text-decoration:none;
-  color:#27ae60;
-  font-weight:600;
-}
+.btn.primary { background:#2ecc71; }
+.btn.secondary { background:#27ae60; }
+.btn:hover { transform: translateY(-2px); box-shadow:0 4px 12px rgba(46,204,113,0.35);}
 </style>
 </head>
-
 <body>
 
 <div class="card">
-  <h1>Web Development</h1>
-  <div class="container">
-    
+
     <div class="profile">
-      <img src="me.jpeg" alt="Nyiko Mathebula">
+        <img src="me.jpeg" alt="Nyiko Mathebula">
     </div>
 
     <div class="content">
-      <p>
-        Your online presence matters. I build smart, responsive, and visually appealing websites that 
-        look great on all devices. From simple landing pages to full-featured business websites, 
-        I make sure your site works seamlessly and engages your audience.
-      </p>
+        <h1>Web Development</h1>
+        <h2>Modern Websites That Work Everywhere</h2>
+        <p>I build responsive, modern websites for businesses and individuals. From landing pages to full e-commerce platforms, I focus on performance, usability, and design. Every site is optimized to look professional and function smoothly on any device.</p>
 
-      <ul class="features">
-        <li>Responsive website design</li>
-        <li>E-commerce solutions</li>
-        <li>Website maintenance & support</li>
-        <li>SEO & performance optimization</li>
-      </ul>
-
-      <a class="back" href="services.html">← Back to my services</a>
+        <a class="btn primary" href="contact.html">Free Consultation</a>
+        <a class="btn secondary" href="products.html">My Products</a>
+        <a class="btn primary" href="https://wa.me/27661125148" target="_blank">WhatsApp Me</a>
     </div>
-  </div>
+
 </div>
 
 </body>
